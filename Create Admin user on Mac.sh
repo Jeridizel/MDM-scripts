@@ -21,9 +21,9 @@ else
 fi
 
 # Enter the details for the new user
-username="csadmin"
-full_name="CS Admin"
-password="2BlindE1"
+username="desired_username"
+full_name="full_name"
+password="account_password"
 
 # Creating the user
 echo "Stvaranje korisnika..."
