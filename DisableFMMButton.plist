@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>PayloadContent</key>
+<array>
+<dict>
+<key>PayloadDescription</key>
+<string>Configures restrictions</string>
+<key>PayloadDisplayName</key>
+<string>Restrictions</string>
+<key>PayloadIdentifier</key>
+<string>com.apple.applicationaccess.796E2CC4-538C-4602-A456-A69B1595474A</string>
+<key>PayloadType</key>
+<string>com.apple.applicationaccess</string>
+<key>PayloadUUID</key>
+<string>796E2CC4-538C-4602-A456-A69B1595474A</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
+<key>allowFindMyDevice</key>
+<false/>
+<key>allowFindMyFriends</key>
+<false/>
+<key>allowFindMyFriendsModification</key>
+<false/>
+</dict>
+<dict>
+<key>DisableFMMiCloudSetting</key>
+<true/>
+<key>PayloadDisplayName</key>
+<string>iCloud Find My setting</string>
+<key>PayloadIdentifier</key>
+<string>com.apple.icloud.managed.8719CC23-8374-400B-8256-535672C99D9A</string>
+<key>PayloadType</key>
+<string>com.apple.icloud.managed</string>
+<key>PayloadUUID</key>
+<string>2729CC23-9774-460G-5156-574672C79H9A</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
+</dict>
+</array>
+<key>PayloadDisplayName</key>
+<string>Find My</string>
+<key>PayloadIdentifier</key>
+<string>MacBook.445D8DF4-76B5-46C6-A934-00788DFACB05</string>
+<key>PayloadRemovalDisallowed</key>
+<false/>
+<key>PayloadType</key>
+<string>Configuration</string>
+<key>PayloadUUID</key>
+<string>174A6965-0E32-4B1A-AB3F-028734772792</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
+</dict>
+</plist>

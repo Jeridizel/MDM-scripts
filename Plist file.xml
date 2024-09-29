@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Label</key>
+<string>com.example.cs</string>
+ 
+
+<key>ProgramArguments</key>
+<array>
+<string>bash</string>
+<string>-c</string>
+<string>/Library/Application\ Support/Miradore/OnlineClient/skripta.sh</string>
+</array>
+ 
+
+<key>StartInterval</key>
+<integer>86400</integer>
+ 
+<key>RunAtLoad</key>
+<true/>
+
+<key>Disabled</key>
+<false/>
+
+<key>StandardOutPath</key>
+<string>/Library/Application\ Support/Miradore/OnlineClient/logfile.log</string>
+<key>StandardErrorPath</key>
+<string>/Library/Application\ Support/Miradore/OnlineClient/error_logfile.log</string>
+
+
+</dict>
+</plist>
