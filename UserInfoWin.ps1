@@ -73,9 +73,9 @@ $laptopInfo = Get-LaptopInfo
 $laptopInfoFormatted = $laptopInfo | Format-List | Out-String -Width 4096
 
 # Set your client ID and client secret
-$client_id = "846840209347-fbpsibnb81sdmr9haph12egf28c6ipsl.apps.googleusercontent.com"
-$client_secret = "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"
-$refresh_token = "1//09gnsvfr0LoR8CgYIARAAGAkSNwF-L9IrfjuXfUVr8pKLfBX45wiNHaHR5qrYc4cnKutHe488RtI5urRZgQXdrRseBT4ITzDoSaE"
+$client_id = "ENTER_YOUR_CLIENT_ID_HERE"
+$client_secret = "ENTER_YOUR_CLIENT_SECRET_HERE"
+$refresh_token = "ENTER_YOUR_REFRESH_TOKEN_HERE"
 
 # Define the token request URL
 $token_url = "https://www.googleapis.com/oauth2/v4/token"
@@ -102,8 +102,8 @@ $GMAIL_API_URL = 'https://www.googleapis.com/upload/gmail/v1/users/me/messages/s
 $AUTH_TOKEN = "Bearer $access_token"
 
 $emailContent = @"
-From: Cloudsense IT <din.sadovic@cloudsense.com>
-To: <it+win@cloudsense.com>
+From: Your Name <your.email@example.com>
+To: <recipient@example.com>
 Subject: Windows USER FINDER
 Content-type: text/html; charset=UTF-8
 
@@ -112,32 +112,32 @@ Content-type: text/html; charset=UTF-8
 <pre>$laptopInfoFormatted</pre>
 <div style="color: #4a26ab; font-family: arial, helvetica, sans-serif; font-size: 14px;">
     <br>
-    <strong>Din Sadovic</strong>
+    <strong>Your Name</strong>
 </div>
 <div style="color: #484848; font-family: arial, helvetica, sans-serif; font-size: 12px;">
-    <strong>IT Technician</strong>
+    <strong>Your Position</strong>
 </div>
 <div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
     <br>
 </div>
 <div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
-    +385994720225   <br>
-    din.sadovic@cloudsense.com
+    +ENTER_YOUR_PHONE_NUMBER   <br>
+    your.email@example.com
 </div>
 <div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
     <br>
-    <a href="https://www.cloudsense.com/?utm_medium=email&utm_campaign=SignatureLogo" target="_blank" style="font-size: 12px; font-family: arial, helvetica, sans-serif;">
-        <img src="https://www.cloudsense.com/hubfs/Signature/CloudSenselogo.png" alt="CloudSense" height="37" width="106" style="border-style: none;">
+    <a href="https://yourcompany.com" target="_blank" style="font-size: 12px; font-family: arial, helvetica, sans-serif;">
+        <img src="https://yourcompany.com/logo.png" alt="Your Company Logo" height="37" width="106" style="border-style: none;">
     </a>
 </div>
 <div style="font-family: arial, helvetica, sans-serif; color: #33333d; font-size: 10px;">
     <br>
-    Registered office: Radnicka cesta 80, 15th floor, 10000 Zagreb, Croatia
+    Registered office: ENTER_YOUR_ADDRESS
 </div>
 <div style="font-family: arial, helvetica, sans-serif; color: #33333d;">
     <br>
-    <a href="https://insight.cloudsense.com/signature/?utm_medium=email&utm_campaign=SignatureCampaign" target="_blank">
-    <img src="https://www.cloudsense.com/hubfs/Signature/Campaign.png?q=2" width="380" height="120" alt="Commerce and Subscriber Management"
+    <a href="https://yourcompany.com/campaign" target="_blank">
+    <img src="https://yourcompany.com/campaign.png" width="380" height="120" alt="Your Campaign"
         style="color:#4a26ab;font-family: helvetica; border-style: none;"></a>
     <br><br>
 </div>
