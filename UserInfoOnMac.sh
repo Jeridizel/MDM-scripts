@@ -17,11 +17,11 @@ else
 fi
 
 # Set your client ID and client secret
-client_id="846840209347-fbpsibnb81sdmr9haph12egf28c6ipsl.apps.googleusercontent.com"
-client_secret="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"
+client_id=""
+client_secret=""
 
 # Set your refresh token
-refresh_token="1//09gnsvfr0LoR8CgYIARAAGAkSNwF-L9IrfjuXfUVr8pKLfBX45wiNHaHR5qrYc4cnKutHe488RtI5urRZgQXdrRseBT4ITzDoSaE"
+refresh_token=""
 
 # Define the token request URL
 token_url="https://www.googleapis.com/oauth2/v4/token"
@@ -47,8 +47,8 @@ EMAIL_CONTENT=$(mktemp)
 
 # Use a here document to specify the email content
 cat <<EOF > "$EMAIL_CONTENT"
-From: Cloudsense IT <din.sadovic@cloudsense.com>
-To: <it+mac@cloudsense.com>
+From:  IT <Your gmail here>
+To: <it+mac@gmail.com>
 Subject: Macbook USER FINDER
 Content-type: text/html; charset=UTF-8
 
@@ -59,37 +59,7 @@ Content-type: text/html; charset=UTF-8
 <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">SVI useri: $all_users</span></span></p>
 <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Apple ID: $AppleID</span></span></p>
 <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Potencijali mail: $MoguciMail</span></span></p>
-<div style="color: #4a26ab; font-family: arial, helvetica, sans-serif; font-size: 14px;">
-    <br>
-    <strong>Din Sadovic</strong>
-</div>
-<div style="color: #484848; font-family: arial, helvetica, sans-serif; font-size: 12px;">
-    <strong>IT Technician</strong>
-</div>
-<div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
-    <br>
-</div>
-<div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
-    +385994720225   <br>
-    din.sadovic@cloudsense.com
-</div>
-<div style="font-size: 12px; color: #484848; font-family: arial, helvetica, sans-serif;">
-    <br>
-    <a href="https://www.cloudsense.com/?utm_medium=email&utm_campaign=SignatureLogo" target="_blank" style="font-size: 12px; font-family: arial, helvetica, sans-serif;">
-        <img src="https://www.cloudsense.com/hubfs/Signature/CloudSenselogo.png" alt="CloudSense" height="37" width="106" style="border-style: none;">
-    </a>
-</div>
-<div style="font-family: arial, helvetica, sans-serif; color: #33333d; font-size: 10px;">
-    <br>
-    Registered office: Radnicka cesta 80, 15th floor, 10000 Zagreb, Croatia
-</div>
-<div style="font-family: arial, helvetica, sans-serif; color: #33333d;">
-    <br>
-    <a href="https://insight.cloudsense.com/signature/?utm_medium=email&utm_campaign=SignatureCampaign" target="_blank">
-    <img src="https://www.cloudsense.com/hubfs/Signature/Campaign.png?q=2" width="380" height="120" alt="Commerce and Subscriber Management"
-        style="color:#4a26ab;font-family: helvetica; border-style: none;"></a>
-    <br><br>
-</div>
+
 </html>
 EOF
 
