@@ -65,14 +65,14 @@ else
 
         # Kreiraj email sadržaj
         cat <<EOF > "$EMAIL_CONTENT"
-From: Cloudsense IT <din.sadovic@cloudsense.com>
+From: IT <Your gmail here>
 To: <$RESULT>
 Subject: Please turn off your Find my MAC
 Content-type: text/html; charset=UTF-8
 
 <html>
 <p>Dear $first_name,</p>
-<p>We've found that you have the "Find my Mac" option enabled on your CloudSense MacBook, and we kindly ask you to disable it. You can find instructions here:</p>
+<p>We've found that you have the "Find my Mac" option enabled on your MacBook, and we kindly ask you to disable it. You can find instructions here:</p>
 <a href="https://support.apple.com/en-gb/guide/icloud/mmdc23b125f6/icloud">Disable Find my Mac</a>
 <p>If you need any help, let us know. Your IT Team.</p>
 <p>Thanks!</p>
